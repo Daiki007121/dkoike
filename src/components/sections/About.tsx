@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section
@@ -9,13 +11,14 @@ export function About() {
           About
         </h2>
         <div className="mt-10 flex flex-col items-start gap-10 md:flex-row md:gap-12">
-          {/* TODO: replace placeholder with <Image src="/profile.jpg" /> once uploaded */}
-          <div
-            aria-label="Daiki Koike profile photo placeholder"
-            className="flex aspect-square w-40 shrink-0 items-center justify-center rounded-2xl bg-zinc-200 text-3xl font-semibold tracking-tight text-zinc-500 sm:w-56 md:w-64 dark:bg-zinc-800 dark:text-zinc-400"
-          >
-            DK
-          </div>
+          <Image
+            src="/profile.jpg"
+            alt="Daiki Koike"
+            width={256}
+            height={256}
+            priority={false}
+            className="aspect-square w-40 shrink-0 rounded-2xl object-cover sm:w-56 md:w-64"
+          />
           <div className="flex-1">
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Physics undergrad turned CS grad student, building privacy-first
