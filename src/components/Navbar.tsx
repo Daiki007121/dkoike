@@ -33,7 +33,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-6 sm:px-8 md:px-12">
         <Link
           href="#top"
-          className="text-sm font-semibold tracking-tight text-foreground"
+          className="inline-flex min-h-11 items-center text-sm font-semibold tracking-tight text-foreground sm:min-h-9"
         >
           Daiki Koike
         </Link>
@@ -43,7 +43,7 @@ export function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="transition-colors hover:text-foreground"
+                  className="inline-flex min-h-11 min-w-11 items-center justify-center transition-colors hover:text-foreground sm:min-h-9 sm:min-w-0"
                 >
                   {link.label}
                 </Link>
