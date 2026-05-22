@@ -18,18 +18,23 @@ export const metadata: Metadata = {
   description:
     "MS Align CS @ Northeastern '26. Building privacy-first AI from first principles. Based in the Bay Area.",
   metadataBase: new URL("https://dkoike.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Daiki Koike",
     description:
       "Engineer and entrepreneur. Physics → CS. Building privacy-first AI.",
     url: "https://dkoike.com",
     siteName: "Daiki Koike",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Daiki Koike",
     description: "Engineer and entrepreneur. Physics → CS.",
+    // TODO: add `creator: "@handle"` once Daiki has a Twitter/X account
   },
 };
 
