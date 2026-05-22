@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen w-full items-center justify-center px-6 py-24 sm:px-8 md:px-12"
+      className="relative flex min-h-screen w-full items-start justify-center px-6 pt-32 pb-16 sm:items-center sm:px-8 sm:py-24 md:px-12"
     >
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
         <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
