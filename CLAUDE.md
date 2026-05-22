@@ -105,8 +105,8 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
 ### 4.4 Contact
 
 ```
-Open to Summer 2026 co-op opportunities. 
-SWE, AI research, or product roles. Bay Area preferred.
+Open to Summer 2026 co-op opportunities and full-time roles 
+starting Dec 2026. SWE, AI research, or product. Bay Area preferred.
 ```
 
 Links (as buttons or icon links):
