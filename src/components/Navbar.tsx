@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -36,18 +37,21 @@ export function Navbar() {
         >
           Daiki Koike
         </Link>
-        <ul className="flex items-center gap-5 text-sm text-muted-foreground sm:gap-7">
-          {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <ul className="flex items-center gap-5 text-sm text-muted-foreground sm:gap-7">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   );
