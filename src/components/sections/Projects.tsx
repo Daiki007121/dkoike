@@ -12,6 +12,10 @@ const PROJECTS: ProjectCardProps[] = [
     links: [
       { label: "Live", href: "https://mask-lm.vercel.app/" },
       { label: "GitHub", href: "https://github.com/Daiki007121/maskLM" },
+      {
+        label: "Blog",
+        href: "https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44",
+      },
     ],
   },
   {
@@ -23,6 +27,10 @@ const PROJECTS: ProjectCardProps[] = [
       "Helps founders validate startup ideas through automated customer discovery interviews. Uses Gemini Live API for low-latency voice interaction, with auto-termination and turn detection.",
     tech: ["Next.js 14", "Gemini Live API", "WebSocket", "Supabase", "Fly.io"],
     links: [
+      {
+        label: "Live",
+        href: "https://digital-entrepreneurs-ai-powered-mo.vercel.app/",
+      },
       {
         label: "GitHub",
         href: "https://github.com/Daiki007121/Digital-Entrepreneurs-AI-Powered-Mom-Test-Validation",

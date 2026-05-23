@@ -81,6 +81,7 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
 - **Links:**
   - Live: https://mask-lm.vercel.app/
   - GitHub: https://github.com/Daiki007121/maskLM
+  - Blog: https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44
 
 #### Card 2: Digital Entrepreneurs
 
@@ -89,6 +90,7 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
 - **Description:** Helps founders validate startup ideas through automated customer discovery interviews. Uses Gemini Live API for low-latency voice interaction, with auto-termination and turn detection.
 - **Tech tags:** `Next.js 14` · `Gemini Live API` · `WebSocket` · `Supabase` · `Fly.io`
 - **Links:**
+  - Live: https://digital-entrepreneurs-ai-powered-mo.vercel.app/
   - GitHub: https://github.com/Daiki007121/Digital-Entrepreneurs-AI-Powered-Mom-Test-Validation
   - Blog: https://medium.com/@daiki007121/building-an-ai-powered-mom-test-interviewer-real-time-voice-ai-for-startup-validation-53a79292e0ce
 
