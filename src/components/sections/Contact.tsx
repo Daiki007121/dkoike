@@ -78,7 +78,6 @@ export function Contact() {
               GitHub
             </a>
           </Button>
-          {/* TODO: file /public/daiki-koike-resume.pdf not uploaded yet */}
           <Button
             asChild
             size="lg"
