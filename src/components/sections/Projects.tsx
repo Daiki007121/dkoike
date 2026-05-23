@@ -16,6 +16,10 @@ const PROJECTS: ProjectCardProps[] = [
         label: "Blog",
         href: "https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44",
       },
+      {
+        label: "Demo",
+        href: "https://www.youtube.com/watch?v=Om9reVlevMA&t=6s",
+      },
     ],
   },
   {
@@ -38,6 +42,10 @@ const PROJECTS: ProjectCardProps[] = [
       {
         label: "Blog",
         href: "https://medium.com/@daiki007121/building-an-ai-powered-mom-test-interviewer-real-time-voice-ai-for-startup-validation-53a79292e0ce",
+      },
+      {
+        label: "Demo",
+        href: "https://www.youtube.com/watch?v=9v_44T3XTT0",
       },
     ],
   },

@@ -82,6 +82,7 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
   - Live: https://mask-lm.vercel.app/
   - GitHub: https://github.com/Daiki007121/maskLM
   - Blog: https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44
+  - Demo: https://www.youtube.com/watch?v=Om9reVlevMA&t=6s
 
 #### Card 2: Digital Entrepreneurs
 
@@ -93,6 +94,7 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
   - Live: https://digital-entrepreneurs-ai-powered-mo.vercel.app/
   - GitHub: https://github.com/Daiki007121/Digital-Entrepreneurs-AI-Powered-Mom-Test-Validation
   - Blog: https://medium.com/@daiki007121/building-an-ai-powered-mom-test-interviewer-real-time-voice-ai-for-startup-validation-53a79292e0ce
+  - Demo: https://www.youtube.com/watch?v=9v_44T3XTT0
 
 #### Card 3: 3.6 Million Routes, One Perfect Day
 
