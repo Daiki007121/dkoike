@@ -1,5 +1,6 @@
 import { FileDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CopyEmail } from "@/components/CopyEmail";
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -94,6 +95,7 @@ export function Contact() {
             </a>
           </Button>
         </div>
+        <CopyEmail />
       </div>
     </section>
   );

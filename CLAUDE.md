@@ -114,7 +114,7 @@ starting Dec 2026. SWE, AI research, or product. Bay Area preferred.
 ```
 
 Links (as buttons or icon links):
-- **Email:** Gmail compose URL — https://mail.google.com/mail/?view=cm&fs=1&to=daiki007121@gmail.com (opens in new tab; avoids broken `mailto:` for users without a configured default mail client)
+- **Email:** Gmail compose URL — https://mail.google.com/mail/?view=cm&fs=1&to=daiki007121@gmail.com (opens in new tab; avoids broken `mailto:` for users without a configured default mail client). Below the button row, render a visible "or copy: daiki007121@gmail.com" line as a click-to-copy fallback (Lucide Copy → Check swap, 2s reset) so Outlook / Apple Mail / ProtonMail users aren't locked out by the Gmail login wall.
 - **LinkedIn:** https://www.linkedin.com/in/daiki-koike-48781116b/
 - **GitHub:** https://github.com/Daiki007121
 - **Resume:** `/daiki-koike-resume.pdf` (download)
