@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { href: "/#about", label: "About" },
   { href: "/#projects", label: "Projects" },
-  { href: "/blog", label: "Blog" },
   { href: "/#contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function Navbar() {
