@@ -25,22 +25,18 @@ export default function BlogIndex() {
     <>
       <Navbar />
       <main className="flex flex-1 flex-col">
-        <section className="w-full px-6 py-24 sm:px-8 sm:py-32 md:px-12">
+        <section className="w-full px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32 md:px-12">
           <div className="mx-auto w-full max-w-3xl">
             <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Blog
             </h1>
-            <p className="mt-4 max-w-prose text-muted-foreground">
-              Notes on privacy-first AI, the move from physics to CS, and the
-              engineering decisions in between.
-            </p>
 
             {posts.length === 0 ? (
-              <p className="mt-12 text-muted-foreground">
+              <p className="mt-10 text-muted-foreground">
                 No posts yet. Check back soon.
               </p>
             ) : (
-              <ul className="mt-12 flex flex-col divide-y divide-border">
+              <ul className="mt-10 flex flex-col divide-y divide-border">
                 {posts.map((post) => (
                   <li key={post.slug}>
                     <Link
