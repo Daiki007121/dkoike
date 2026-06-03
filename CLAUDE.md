@@ -297,7 +297,7 @@ Before considering implementation done:
 - ❌ Don't rewrite the About copy. Use the exact placeholder. Daiki will write it later.
 - ❌ Don't change the Hero H1 or Sub wording.
 - ❌ Don't add external services (analytics, comment widgets, chatbots) in v1.
-- ❌ Don't add a blog/writing section in v1.
+- ✅ Blog is now in scope (added post-v1). Self-hosted MDX at `/blog`, articles in English, content in `src/content/blog/*.mdx`. Existing Medium posts stay as external links; new posts are written here. See `src/lib/blog.ts` for the content layer.
 - ❌ Don't add complex animations (Framer Motion, GSAP) in v1. Subtle CSS transitions only.
 - ❌ Don't add a contact form. Email link is sufficient.
 - ❌ Don't introduce a new color palette beyond shadcn's Zinc base.

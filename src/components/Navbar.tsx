@@ -5,10 +5,13 @@ import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 
+// Hashes are root-relative ("/#about", not "#about") so they resolve from any
+// route — e.g. clicking "About" from /blog navigates home and then scrolls.
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -32,7 +35,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-6 sm:px-8 md:px-12">
         <Link
-          href="#top"
+          href="/"
           className="inline-flex min-h-11 items-center text-sm font-semibold tracking-tight text-foreground sm:min-h-9"
         >
           Daiki Koike
