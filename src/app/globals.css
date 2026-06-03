@@ -128,3 +128,54 @@
     @apply font-sans;
   }
 }
+
+/* Long-form article styling for rendered MDX (.prose wrapper on blog posts).
+   Hand-rolled against the zinc theme tokens to avoid pulling in the
+   @tailwindcss/typography plugin. */
+@layer components {
+  .prose {
+    @apply text-base leading-7 text-foreground;
+  }
+  .prose p {
+    @apply my-5;
+  }
+  .prose h2 {
+    @apply mt-12 mb-4 text-2xl font-bold tracking-tight;
+  }
+  .prose h3 {
+    @apply mt-8 mb-3 text-xl font-semibold tracking-tight;
+  }
+  .prose ul {
+    @apply my-5 list-disc pl-6;
+  }
+  .prose ol {
+    @apply my-5 list-decimal pl-6;
+  }
+  .prose li {
+    @apply my-2;
+  }
+  .prose a {
+    @apply font-medium underline underline-offset-4 hover:text-foreground;
+  }
+  .prose blockquote {
+    @apply my-6 border-l-2 border-border pl-4 italic text-muted-foreground;
+  }
+  .prose code {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-sm;
+  }
+  .prose pre {
+    @apply my-6 overflow-x-auto rounded-lg border border-border bg-muted p-4 text-sm;
+  }
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+  .prose img {
+    @apply my-6 rounded-lg border border-border;
+  }
+  .prose strong {
+    @apply font-semibold text-foreground;
+  }
+  .prose hr {
+    @apply my-10 border-border;
+  }
+}
