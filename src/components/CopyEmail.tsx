@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
 
-const EMAIL = "daiki007121@gmail.com";
+const EMAIL = "koike.d@northeastern.edu";
 
 export function CopyEmail() {
   const [copied, setCopied] = useState(false);

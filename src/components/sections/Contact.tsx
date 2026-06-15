@@ -45,7 +45,7 @@ export function Contact() {
         <div className="mt-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
           <Button asChild size="lg" className="h-11 w-full px-5 text-base sm:w-auto">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=daiki007121@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=koike.d@northeastern.edu"
               target="_blank"
               rel="noopener noreferrer"
             >
