@@ -19,7 +19,7 @@ export function CopyEmail() {
   }
 
   return (
-    <p className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
+    <p className="mt-6 flex flex-wrap items-center justify-center gap-x-1 gap-y-1 text-sm text-muted-foreground">
       <span>or copy:</span>
       <button
         type="button"
