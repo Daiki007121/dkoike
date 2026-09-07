@@ -39,8 +39,8 @@ export function Contact() {
           Contact
         </h2>
         <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-          Open to Summer 2026 co-op opportunities and full-time roles starting
-          Dec 2026. SWE, AI research, or product. Bay Area preferred.
+          Open to full-time roles starting January 2027.
+          SWE, AI research, or product. Bay Area preferred.
         </p>
         <div className="mt-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
           <Button asChild size="lg" className="h-11 w-full px-5 text-base sm:w-auto">
