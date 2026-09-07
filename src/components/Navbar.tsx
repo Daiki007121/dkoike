@@ -33,15 +33,15 @@ export function Navbar() {
           : "border-transparent bg-transparent",
       )}
     >
-      <nav className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-6 sm:px-8 md:px-12">
+      <nav className="mx-auto grid w-full max-w-5xl grid-cols-[1fr_auto] items-center px-6 py-1 sm:h-14 sm:grid-cols-[1fr_auto_auto] sm:gap-x-5 sm:px-8 sm:py-0 md:px-12">
         <Link
           href="/"
           className="inline-flex min-h-11 items-center text-sm font-semibold tracking-tight text-foreground sm:min-h-9"
         >
           Daiki Koike
         </Link>
-        <div className="flex items-center gap-3 sm:gap-5">
-          <ul className="flex items-center gap-5 text-sm text-muted-foreground sm:gap-7">
+        <div className="contents">
+          <ul className="col-span-2 row-start-2 grid grid-cols-4 items-center text-sm text-muted-foreground sm:col-span-1 sm:col-start-2 sm:row-start-1 sm:flex sm:gap-7">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
@@ -53,7 +53,9 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <ThemeToggle />
+          <div className="col-start-2 row-start-1 justify-self-end sm:col-start-3">
+            <ThemeToggle />
+          </div>
         </div>
       </nav>
     </header>
