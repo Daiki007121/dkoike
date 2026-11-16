@@ -53,20 +53,42 @@ Section order (top to bottom):
 
 ```
 H1: Engineer and entrepreneur. Physics → CS.
-Sub: MS Align @ Northeastern '26. Building privacy-first AI 
-     from first principles. Based in the Bay Area.
+Sub: Solving social problems with technology and the power of the 
+     market. MS in CS @ Northeastern '26, Bay Area. Building 
+     privacy-first AI and an AI voice interviewer for founders.
+     (Sub updated Nov 2026 to match the About; H1 unchanged.)
 ```
 
-### 4.2 About (PLACEHOLDER — do not write final copy)
+### 4.2 About (CONFIRMED — do not change wording)
 
-Place this exact placeholder. Daiki will rewrite later:
+Final copy, written with Daiki in Nov 2026. Four paragraphs, rendered as separate `<p>` elements:
 
 ```
-Physics undergrad turned CS grad student, building privacy-first 
-AI tools. More to come.
+I came to the U.S. as an international student who was not able to 
+speak English, and left San Francisco State with a physics degree.
 
-{/* TODO: rewrite when ready */}
+In my final year I taught physics at a public high school in San 
+Francisco. Some of my students spent their evenings looking after 
+younger siblings. One was losing their housing. Teachers had stopped 
+assigning homework because there was no time at home to do it. I 
+could explain Newton's laws, but nothing I knew could change any of 
+that.
+
+That is why I moved into computer science, and why I build companies 
+and not only software. I want to solve social problems with 
+technology and the power of the market: build a product that helps 
+people, run it as a business so it lasts, and eventually make it 
+infrastructure.
+
+For now I'm an MS student at Northeastern, learning by shipping: 
+privacy-first AI tools like MaskLM, and an AI voice interviewer that 
+helps founders test their ideas before they build.
 ```
+
+Wording choices Daiki made deliberately (don't "improve" these):
+- "was not able to speak English" — kept as is; no grades/honors (magna cum laude) in the About.
+- "the power of the market" — not "market power" (economics term for monopoly pricing power).
+- "so it lasts" — no "into the future"; "eventually" already carries the long-term sense.
 
 Include a profile photo on the side or above the text. Use `/public/profile.jpg`. Render as a rounded square or circle (whichever fits the layout better).
 
@@ -231,7 +253,7 @@ Implement in this order, committing after each step:
 2. **Hero** — H1 + Sub + maybe CTA buttons (View Projects / Contact)
 3. **Navbar** — sticky, transparent on hero, solid on scroll
 4. **Projects** — extract `ProjectCard` component, render 3 cards
-5. **About** — placeholder copy + profile photo placeholder
+5. **About** — final copy (see 4.2) + profile photo
 6. **Contact** — copy + 4 link buttons (Email / LinkedIn / GitHub / Resume)
 7. **Footer**
 8. **Dark mode toggle** (`next-themes`)
@@ -294,7 +316,7 @@ Before considering implementation done:
 
 ## 11. Things NOT to Do
 
-- ❌ Don't rewrite the About copy. Use the exact placeholder. Daiki will write it later.
+- ❌ Don't change the About copy. It is final (see 4.2); edit only when Daiki asks.
 - ❌ Don't change the Hero H1 or Sub wording.
 - ❌ Don't add external services (analytics, comment widgets, chatbots) in v1.
 - ✅ Blog is now in scope (added post-v1). Self-hosted MDX at `/blog`, articles in English, content in `src/content/blog/*.mdx`. Existing Medium posts stay as external links; new posts are written here. See `src/lib/blog.ts` for the content layer.
@@ -309,7 +331,7 @@ Before considering implementation done:
 
 These are NOT for Claude Code to handle:
 
-- [ ] Write final About copy (Daiki will do this when ready)
+- [x] Write final About copy (done Nov 2026, see 4.2)
 - [ ] Upload `/public/daiki-koike-resume.pdf`
 - [ ] Upload `/public/profile.jpg`
 - [ ] Verify all external links work after deploy

@@ -12,8 +12,9 @@ export function Hero() {
           Engineer and entrepreneur. Physics → CS.
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-          MS Align @ Northeastern &apos;26. Building privacy-first AI from
-          first principles. Based in the Bay Area.
+          Solving social problems with technology and the power of the market.
+          MS in CS @ Northeastern &apos;26, Bay Area. Building privacy-first AI
+          and an AI voice interviewer for founders.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Button asChild size="lg" className="h-11 px-5 text-base">
