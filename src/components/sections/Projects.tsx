@@ -3,12 +3,12 @@ import { ProjectCard, type ProjectCardProps } from "@/components/ProjectCard";
 const PROJECTS: ProjectCardProps[] = [
   {
     title: "MaskLM",
-    status: "In Progress",
+    status: "Completed",
     year: "2026",
-    headline: "Privacy-first PII detection that runs in your browser.",
+    headline: "Privacy-first PII-masking middleware for LLMs.",
     description:
-      "Middleware for individuals and small startups that can't route sensitive data through servers. Detects and masks PII client-side via browser-based SLM, with optional API backend.",
-    tech: ["FastAPI", "TypeScript", "Vite", "Fly.io", "Vercel", "Supabase"],
+      "Web app that masks PII in text bound for LLMs, built as a web app rather than a PyPI package so non-technical users can use it. Stateless backend with zero PII persistence: no database, session, or request-body logging. Detection by Microsoft Presidio.",
+    tech: ["Next.js", "FastAPI", "Microsoft Presidio", "Supabase", "Vercel"],
     links: [
       { label: "Live", href: "https://mask-lm.vercel.app/" },
       { label: "GitHub", href: "https://github.com/Daiki007121/maskLM" },

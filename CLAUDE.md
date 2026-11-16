@@ -74,10 +74,10 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
 
 #### Card 1: MaskLM
 
-- **Status badge:** `In Progress` `2026`
-- **Headline:** Privacy-first PII detection that runs in your browser.
-- **Description:** Middleware for individuals and small startups that can't route sensitive data through servers. Detects and masks PII client-side via browser-based SLM, with optional API backend.
-- **Tech tags:** `FastAPI` · `TypeScript` · `Vite` · `Fly.io` · `Vercel` · `Supabase`
+- **Status badge:** `Completed` `2026`
+- **Headline:** Privacy-first PII-masking middleware for LLMs.
+- **Description:** Web app that masks PII in text bound for LLMs, built as a web app rather than a PyPI package so non-technical users can use it. Stateless backend with zero PII persistence: no database, session, or request-body logging. Detection by Microsoft Presidio.
+- **Tech tags:** `Next.js` · `FastAPI` · `Microsoft Presidio` · `Supabase` · `Vercel`
 - **Links:**
   - Live: https://mask-lm.vercel.app/
   - GitHub: https://github.com/Daiki007121/maskLM
@@ -336,7 +336,7 @@ For incremental sections, direct commits to `main` are fine.
 ## 14. Reference: Project Memory
 
 Daiki's other ongoing projects (for cross-linking awareness):
-- **MaskLM** (active): privacy-first PII middleware, browser-SLM
+- **MaskLM**: privacy-first PII-masking middleware for LLMs (Next.js, FastAPI, Microsoft Presidio)
 - **Anthropic Fellows** (applied April 2026, awaiting result)
 - **Co-op search** (Summer 2026): targeting Salesforce, Stripe, Anthropic, etc.
 
