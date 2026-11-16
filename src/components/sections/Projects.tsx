@@ -21,6 +21,7 @@ const PROJECTS: ProjectCardProps[] = [
         href: "https://www.youtube.com/watch?v=Om9reVlevMA&t=6s",
       },
     ],
+    video: { id: "Om9reVlevMA", start: 6 },
   },
   {
     title: "Digital Entrepreneurs",
@@ -48,6 +49,7 @@ const PROJECTS: ProjectCardProps[] = [
         href: "https://www.youtube.com/watch?v=9v_44T3XTT0",
       },
     ],
+    video: { id: "9v_44T3XTT0" },
   },
   {
     title: "3.6 Million Routes, One Perfect Day",
@@ -67,6 +69,11 @@ const PROJECTS: ProjectCardProps[] = [
         href: "https://docs.google.com/presentation/d/1I8J8MFFtrBSqMfICpipxWAqf-vwIQ-i1u2u26cWlopc/edit?usp=sharing",
       },
     ],
+    cover: {
+      src: "/projects/bay-area-tsp.png",
+      alt: "Title slide: 3,628,800 possible tours, one optimal day",
+      href: "https://docs.google.com/presentation/d/1I8J8MFFtrBSqMfICpipxWAqf-vwIQ-i1u2u26cWlopc/edit?usp=sharing",
+    },
   },
 ];
 

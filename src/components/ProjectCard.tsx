@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+import { YouTubeEmbed, type YouTubeVideo } from "@/components/YouTubeEmbed";
+
 type ProjectStatus = "In Progress" | "Completed";
 
 type ProjectLink = {
@@ -13,6 +17,9 @@ export type ProjectCardProps = {
   description: string;
   tech: string[];
   links: ProjectLink[];
+  video?: YouTubeVideo;
+  /** Static 16:9 cover shown in the media slot when there is no video. */
+  cover?: { src: string; alt: string; href: string };
 };
 
 function Pill({ children }: { children: React.ReactNode }) {
@@ -31,9 +38,29 @@ export function ProjectCard({
   description,
   tech,
   links,
+  video,
+  cover,
 }: ProjectCardProps) {
   return (
     <article className="flex h-full flex-col gap-5 rounded-xl border border-border bg-card p-6 transition-colors hover:border-foreground/30">
+      {video && <YouTubeEmbed video={video} title={title} />}
+      {!video && cover && (
+        <a
+          href={cover.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative block aspect-video w-full overflow-hidden rounded-lg border border-border bg-muted transition-opacity hover:opacity-90"
+        >
+          <Image
+            src={cover.src}
+            alt={cover.alt}
+            fill
+            sizes="(min-width: 768px) 320px, 100vw"
+            className="object-cover"
+          />
+        </a>
+      )}
+
       <div className="flex justify-end gap-2">
         <Pill>{status}</Pill>
         <Pill>{year}</Pill>
