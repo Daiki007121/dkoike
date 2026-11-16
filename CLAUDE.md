@@ -95,21 +95,14 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
 
 ### 4.3 Projects (3 cards, confirmed)
 
-#### Card 1: MaskLM
+Layout (redesigned Nov 2026): a 2-column grid. Card 1 is `featured`: it spans both columns, with media on the left and text on the right on desktop. Cards 2 and 3 sit side by side below, media on top. On mobile all three stack.
 
-- **Status badge:** `Completed` `2026`
-- **Headline:** Privacy-first PII-masking middleware for LLMs.
-- **Description:** Web app that masks PII in text bound for LLMs, built as a web app rather than a PyPI package so non-technical users can use it. Stateless backend with zero PII persistence: no database, session, or request-body logging. Detection by Microsoft Presidio.
-- **Tech tags:** `Next.js` · `FastAPI` · `Microsoft Presidio` · `Supabase` · `Vercel`
-- **Links:**
-  - Live: https://mask-lm.vercel.app/
-  - GitHub: https://github.com/Daiki007121/maskLM
-  - Blog: https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44
-  - Demo: https://www.youtube.com/watch?v=Om9reVlevMA&t=6s
+Each card shows, in order: media (YouTube embed or cover image), a mono line with the index ("01") and year, title, headline, one large stat with a mono label, description, tech tags, links. No "Completed" status pill. The order below is Daiki's choice: Digital Entrepreneurs leads because it backs up the "entrepreneur" positioning.
 
-#### Card 2: Digital Entrepreneurs
+#### Card 1: Digital Entrepreneurs
 
-- **Status badge:** `Completed` `2026`
+- **Year:** `2026`
+- **Stat:** `97%` — test coverage across 243 tests
 - **Headline:** Real-time AI voice interviewer for Mom Test validation.
 - **Description:** Helps founders validate startup ideas through automated customer discovery interviews. Uses Gemini Live API for low-latency voice interaction, with auto-termination and turn detection.
 - **Tech tags:** `Next.js 14` · `Gemini Live API` · `WebSocket` · `Supabase` · `Fly.io`
@@ -119,15 +112,29 @@ Include a profile photo on the side or above the text. Use `/public/profile.jpg`
   - Blog: https://medium.com/@daiki007121/building-an-ai-powered-mom-test-interviewer-real-time-voice-ai-for-startup-validation-53a79292e0ce
   - Demo: https://www.youtube.com/watch?v=9v_44T3XTT0
 
-#### Card 3: 3.6 Million Routes, One Perfect Day
+#### Card 2: 3.6 Million Routes, One Perfect Day
 
-- **Status badge:** `Completed` `2026`
+- **Year:** `2026`
+- **Stat:** `2,101×` — fewer states explored by A* than exhaustive search
 - **Headline:** A TSP study on real Bay Area transit data.
 - **Description:** Compared BFS exhaustive search, Greedy Nearest Neighbor, and A* with MST heuristic across 11 Bay Area landmarks using Google Maps transit API. A* matched BFS optimum (23,775s) with 2,101× fewer states explored.
 - **Tech tags:** `Python` · `Google Maps API` · `A*` · `MST heuristic`
 - **Links:**
   - GitHub: https://github.com/Daiki007121/bay-area-tsp
   - Slides: https://docs.google.com/presentation/d/1I8J8MFFtrBSqMfICpipxWAqf-vwIQ-i1u2u26cWlopc/edit?usp=sharing
+
+#### Card 3: MaskLM
+
+- **Year:** `2026`
+- **Stat:** `0` — bytes of PII stored: no database, session, or request-body logs
+- **Headline:** Privacy-first PII-masking middleware for LLMs.
+- **Description:** Web app that masks PII in text bound for LLMs. Built for doctors, lawyers, and recruiters: a web app rather than a PyPI package, so non-technical users can use it. Stateless backend with zero PII persistence: no database, session, or request-body logging. Detection by Microsoft Presidio.
+- **Tech tags:** `Next.js` · `FastAPI` · `Microsoft Presidio` · `Supabase` · `Vercel`
+- **Links:**
+  - Live: https://mask-lm.vercel.app/
+  - GitHub: https://github.com/Daiki007121/maskLM
+  - Blog: https://medium.com/@daiki007121/shipping-a-privacy-first-llm-middleware-with-claude-code-48c2c69dff44
+  - Demo: https://www.youtube.com/watch?v=Om9reVlevMA&t=6s
 
 ### 4.4 Contact
 

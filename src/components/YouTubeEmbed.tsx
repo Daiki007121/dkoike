@@ -47,7 +47,7 @@ export function YouTubeEmbed({
             src={`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`}
             alt=""
             fill
-            sizes="(min-width: 768px) 320px, 100vw"
+            sizes="(min-width: 768px) 640px, 100vw"
             className="object-cover transition-opacity group-hover:opacity-90"
           />
           <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/20">
