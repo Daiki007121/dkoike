@@ -67,7 +67,7 @@ export default function OpenGraphImage() {
               maxWidth: "920px",
             }}
           >
-            MS Align @ Northeastern &apos;26. Building privacy-first AI.
+            MS in CS @ Northeastern &apos;26. Building privacy-first AI.
           </div>
         </div>
         <div

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Daiki Koike — Engineer & Entrepreneur",
   description:
-    "MS Align CS @ Northeastern '26. Building privacy-first AI from first principles. Based in the Bay Area.",
+    "Engineer and entrepreneur solving social problems with technology and the power of the market. MS in CS @ Northeastern '26, building privacy-first AI.",
   metadataBase: new URL("https://dkoike.com"),
   alternates: {
     canonical: "/",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Daiki Koike",
     description:
-      "Engineer and entrepreneur. Physics → CS. Building privacy-first AI.",
+      "Engineer and entrepreneur. Physics → CS. Solving social problems with technology and the power of the market.",
     url: "https://dkoike.com",
     siteName: "Daiki Koike",
     locale: "en_US",

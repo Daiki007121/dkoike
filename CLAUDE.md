@@ -14,7 +14,7 @@ This document tells Claude Code how to build this site. Read this fully before s
 **Vercel:** https://dkoike.vercel.app (redirects to dkoike.com)  
 **Repo:** https://github.com/Daiki007121/dkoike
 
-**Positioning:** Engineer and entrepreneur. Physics → CS. Privacy-first AI from first principles.
+**Positioning:** Engineer and entrepreneur. Physics → CS. Solving social problems with technology and the power of the market; currently building privacy-first AI.
 
 ---
 
@@ -293,11 +293,11 @@ In `src/app/layout.tsx`, set:
 ```ts
 export const metadata = {
   title: "Daiki Koike — Engineer & Entrepreneur",
-  description: "MS Align CS @ Northeastern '26. Building privacy-first AI from first principles. Based in the Bay Area.",
+  description: "Engineer and entrepreneur solving social problems with technology and the power of the market. MS in CS @ Northeastern '26, building privacy-first AI.",
   metadataBase: new URL("https://dkoike.com"),
   openGraph: {
     title: "Daiki Koike",
-    description: "Engineer and entrepreneur. Physics → CS. Building privacy-first AI.",
+    description: "Engineer and entrepreneur. Physics → CS. Solving social problems with technology and the power of the market.",
     url: "https://dkoike.com",
     siteName: "Daiki Koike",
     type: "website",
