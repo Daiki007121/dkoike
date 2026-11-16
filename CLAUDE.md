@@ -347,6 +347,7 @@ Before considering implementation done:
 - ❌ Don't add a contact form. Email link is sufficient.
 - ❌ Don't introduce a new color palette beyond shadcn's Zinc base (only exception: brand-colored Skills icons, see 4.6).
 - ❌ Don't use stock photos or illustrations.
+- ❌ Don't edit the contents of any PDF (e.g. `/public/daiki-koike-resume.pdf`), and don't make edited copies of one. Daiki maintains the resume in Google Docs and re-exports it himself. If a PDF's content is outdated, say so and stop there; only swap the file when Daiki provides a new export.
 
 ---
 
