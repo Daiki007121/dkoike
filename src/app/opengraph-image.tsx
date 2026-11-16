@@ -1,14 +1,12 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
 export const alt = "Daiki Koike — Engineer & Entrepreneur";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // OG previews don't honor dark mode, so this is fixed white-on-near-black-text.
-// Default ImageResponse font is used (Inter-style sans); embedding Geist at edge
-// runtime requires fetching the TTF binary on every render, which we skipped
-// for now — visual difference at 1200x630 is minimal.
+// Default ImageResponse font is used (Inter-style sans) rather than embedding
+// Geist — visual difference at 1200x630 is minimal.
 
 export default function OpenGraphImage() {
   return new ImageResponse(
