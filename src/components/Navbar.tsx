@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { href: "/#about", label: "About" },
   { href: "/#projects", label: "Projects" },
+  { href: "/#skills", label: "Skills" },
   { href: "/#contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
 ];
@@ -41,7 +42,7 @@ export function Navbar() {
           Daiki Koike
         </Link>
         <div className="contents">
-          <ul className="col-span-2 row-start-2 grid grid-cols-4 items-center text-sm text-muted-foreground sm:col-span-1 sm:col-start-2 sm:row-start-1 sm:flex sm:gap-7">
+          <ul className="col-span-2 row-start-2 flex items-center justify-between text-sm text-muted-foreground sm:col-span-1 sm:col-start-2 sm:row-start-1 sm:justify-start sm:gap-7">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link

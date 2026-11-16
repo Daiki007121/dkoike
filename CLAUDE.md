@@ -38,12 +38,13 @@ Do NOT add unrelated dependencies. If a new dependency is genuinely needed, ask 
 
 Section order (top to bottom):
 
-1. **Navigation bar** — sticky top, links to anchors (#about, #projects, #contact)
+1. **Navigation bar** — sticky top, links to anchors (#about, #projects, #skills, #contact) + /blog
 2. **Hero** — full viewport height ideally
 3. **About** — short bio + profile photo
 4. **Projects** — 3 cards
-5. **Contact** — CTA + links
-6. **Footer** — copyright + tech stack
+5. **Skills** — 4 category cards of icon tiles (added Nov 2026, see 4.6)
+6. **Contact** — CTA + links
+7. **Footer** — copyright + tech stack
 
 ---
 
@@ -148,6 +149,20 @@ Links (as buttons or icon links):
 Built with Next.js + Tailwind. Deployed on Vercel.
 ```
 
+### 4.6 Skills (added Nov 2026)
+
+Four category cards in a 2-column grid (1 column on mobile), each holding a 3-column grid of icon + label tiles. Data lives in `GROUPS` in `src/components/sections/Skills.tsx`; the list comes from the resume plus the project stacks.
+
+- **AI / LLM:** Claude Code, Anthropic API, Gemini Live API, MCP, Presidio
+- **Languages:** Python, TypeScript, JavaScript, HTML, CSS
+- **Frameworks:** Next.js, React, Node.js, Express, FastAPI, Tailwind CSS
+- **Data & Tools:** Supabase, MongoDB, Vercel, Fly.io, Git, GitHub Actions
+
+Design decisions (Daiki chose these after comparing variants):
+- Cards and tiles match the Project cards: zinc only, `rounded-xl border border-border bg-card`, mono labels. No tinted or gradient cards.
+- Icons are always shown in their brand color. This is the one deliberate exception to the zinc-only rule in 6.2. Near-black brand marks (Next.js, Vercel, Anthropic, MCP, Express, Fly.io) use the theme foreground so they stay visible in dark mode.
+- Icon paths are inlined in `src/lib/skill-icons.ts` (generated from Simple Icons, CC0). No icon dependency and no CDN requests. To add a skill, add its path + hex there and an entry in `GROUPS`. Tools without a brand icon (Presidio) fall back to a Lucide icon.
+
 ---
 
 ## 5. Static Assets
@@ -180,7 +195,7 @@ NOT:
 
 ### 6.2 Colors
 
-Use shadcn's default Zinc palette (already configured in `globals.css`). Avoid introducing new colors arbitrarily. If accent is needed, use a single subtle color (e.g., a muted blue or green).
+Use shadcn's default Zinc palette (already configured in `globals.css`). Avoid introducing new colors arbitrarily. If accent is needed, use a single subtle color (e.g., a muted blue or green). Exception: brand-colored icons in the Skills section (see 4.6).
 
 ### 6.3 Typography
 
@@ -215,6 +230,7 @@ src/components/
 │   ├── Hero.tsx
 │   ├── About.tsx
 │   ├── Projects.tsx
+│   ├── Skills.tsx
 │   ├── Contact.tsx
 │   └── Footer.tsx
 ├── ProjectCard.tsx  # reusable card component
@@ -322,7 +338,7 @@ Before considering implementation done:
 - ✅ Blog is now in scope (added post-v1). Self-hosted MDX at `/blog`, articles in English, content in `src/content/blog/*.mdx`. Existing Medium posts stay as external links; new posts are written here. See `src/lib/blog.ts` for the content layer.
 - ❌ Don't add complex animations (Framer Motion, GSAP) in v1. Subtle CSS transitions only.
 - ❌ Don't add a contact form. Email link is sufficient.
-- ❌ Don't introduce a new color palette beyond shadcn's Zinc base.
+- ❌ Don't introduce a new color palette beyond shadcn's Zinc base (only exception: brand-colored Skills icons, see 4.6).
 - ❌ Don't use stock photos or illustrations.
 
 ---
