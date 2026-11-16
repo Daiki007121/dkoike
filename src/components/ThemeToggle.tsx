@@ -14,7 +14,9 @@ export function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(next)}
-      aria-label={`Switch to ${next} mode`}
+      // Static label: the theme is unknown during SSR, so a theme-dependent
+      // label mismatches on hydration.
+      aria-label="Toggle theme"
       className="relative size-11 sm:size-9"
     >
       <Sun className="size-4 rotate-0 scale-100 transition-transform duration-200 dark:-rotate-90 dark:scale-0" />
